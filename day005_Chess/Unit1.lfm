@@ -1,0 +1,41 @@
+object Form1: TForm1
+  Left = 316
+  Height = 520
+  Top = 162
+  Width = 600
+  Caption = 'チェスゲーム'
+  ClientHeight = 520
+  ClientWidth = 600
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object PaintBox1: TPaintBox
+    Left = 10
+    Height = 480
+    Top = 10
+    Width = 480
+    OnMouseDown = PaintBox1MouseDown
+    OnPaint = PaintBox1Paint
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 500
+    Height = 19
+    Top = 20
+    Width = 80
+    Caption = '白のターン'
+    Font.Height = -13
+    Font.Style = [fsBold]
+    ParentColor = False
+  end
+  object Button1: TButton
+    Left = 500
+    Height = 30
+    Top = 50
+    Width = 80
+    Caption = 'リセット'
+    OnClick = Button1Click
+    TabOrder = 0
+  end
+end

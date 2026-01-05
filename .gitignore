@@ -1,26 +1,16 @@
 # Lazarus/Free Pascal - プロジェクトの一時ファイルとバイナリ
 
+# day*ディレクトリはプロジェクトディレクトリなので明示的に許可
+!day*/
+
 # 実行ファイル (Windows)
 *.exe
-# 実行ファイル (Linux/macOS - 拡張子なしのバイナリを想定)
-[A-Za-z0-9]*
-!*.pas
-!*.lfm
-!*.lpi
-!*.lpr
-!*.res
-!*.ico
-!*.txt
-!*.md
-!*.gitignore
 
 # コンパイル済みユニット (一時ファイル)
 *.o
 *.ppu
 *.obj
 *.compiled
-*.ppu
-*.ppu
 *.or
 
 # バックアップファイル
@@ -31,6 +21,8 @@ backup/
 # Lazarus固有の設定ファイル（個人環境に依存するもの）
 *.lps
 lib/
+# day*ディレクトリ内のlib/は無視（コンパイル済みファイル）
+day*/lib/
 
 # OS固有のファイル
 .DS_Store
