@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 316
+  Height = 400
+  Top = 162
+  Width = 800
+  Caption = 'World Clock'
+  ClientHeight = 400
+  ClientWidth = 800
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  object Image1: TImage
+    Left = 0
+    Height = 400
+    Top = 0
+    Width = 800
+    Align = alClient
+    Stretch = True
+  end
+  object LabelTokyo: TLabel
+    Left = 650
+    Height = 40
+    Top = 80
+    Width = 100
+    Alignment = taCenter
+    Caption = 'Tokyo'#13#10'00:00:00'
+    Font.Color = clRed
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Color = clWhite
+    Transparent = False
+  end
+  object LabelLondon: TLabel
+    Left = 310
+    Height = 40
+    Top = 50
+    Width = 100
+    Alignment = taCenter
+    Caption = 'London'#13#10'00:00:00'
+    Font.Color = clRed
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Color = clWhite
+    Transparent = False
+  end
+  object LabelNewYork: TLabel
+    Left = 160
+    Height = 40
+    Top = 70
+    Width = 100
+    Alignment = taCenter
+    Caption = 'New York'#13#10'00:00:00'
+    Font.Color = clRed
+    Font.Height = -17
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    ParentColor = False
+    ParentFont = False
+    Color = clWhite
+    Transparent = False
+  end
+  object Timer1: TTimer
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 320
+  end
+end
