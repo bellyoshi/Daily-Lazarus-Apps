@@ -1,0 +1,396 @@
+object Form1: TForm1
+  Left = 382
+  Height = 750
+  Top = 115
+  Width = 1000
+  Caption = 'Lazarus プロジェクトマネージャー'
+  ClientHeight = 750
+  ClientWidth = 1000
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 750
+    Top = 0
+    Width = 1000
+    ActivePage = TabSheetMain
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object TabSheetMain: TTabSheet
+      Caption = 'メイン'
+      ClientHeight = 717
+      ClientWidth = 992
+      OnShow = TabSheetMainShow
+      object PanelMain: TPanel
+        Left = 0
+        Height = 717
+        Top = 0
+        Width = 992
+        Align = alClient
+        BevelOuter = bvNone
+        ClientHeight = 717
+        ClientWidth = 992
+        TabOrder = 0
+        object PanelCreate: TPanel
+          Left = 0
+          Height = 312
+          Top = 0
+          Width = 992
+          Align = alTop
+          BevelOuter = bvLowered
+          Caption = '新規プロジェクト作成'
+          ClientHeight = 312
+          ClientWidth = 992
+          TabOrder = 0
+          object Label1: TLabel
+            Left = 20
+            Height = 20
+            Top = 40
+            Width = 81
+            Caption = 'プロジェクト名:'
+          end
+          object Label2: TLabel
+            Left = 20
+            Height = 20
+            Top = 80
+            Width = 98
+            Caption = 'プロジェクトルート:'
+          end
+          object Label3: TLabel
+            Left = 20
+            Height = 20
+            Top = 120
+            Width = 33
+            Caption = '種類:'
+          end
+          object EditProjectName: TEdit
+            Left = 180
+            Height = 28
+            Top = 35
+            Width = 375
+            TabOrder = 0
+          end
+          object DirectoryEditProjectRoot: TDirectoryEdit
+            Left = 180
+            Height = 28
+            Top = 75
+            Width = 625
+            DialogTitle = 'プロジェクトルートフォルダを選択'
+            ShowHidden = False
+            ButtonWidth = 29
+            NumGlyphs = 1
+            MaxLength = 0
+            TabOrder = 1
+          end
+          object RadioGroupProjectType: TRadioGroup
+            Left = 180
+            Height = 131
+            Top = 120
+            Width = 375
+            AutoFill = True
+            Caption = 'プロジェクトタイプ'
+            ChildSizing.LeftRightSpacing = 6
+            ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+            ChildSizing.EnlargeVertical = crsHomogenousChildResize
+            ChildSizing.ShrinkHorizontal = crsScaleChilds
+            ChildSizing.ShrinkVertical = crsScaleChilds
+            ChildSizing.Layout = cclLeftToRightThenTopToBottom
+            ChildSizing.ControlsPerLine = 1
+            ClientHeight = 106
+            ClientWidth = 371
+            ItemIndex = 2
+            Items.Strings = (
+              'コンソール'
+              '単純なプログラム(lpr)'
+              'アプリケーション(GUI)'
+            )
+            TabOrder = 2
+          end
+          object BtnCreate: TButton
+            Left = 180
+            Height = 38
+            Top = 260
+            Width = 150
+            Caption = '作成'
+            TabOrder = 3
+            OnClick = BtnCreateClick
+          end
+          object BtnOpenProject: TButton
+            Left = 340
+            Height = 38
+            Top = 260
+            Width = 150
+            Caption = 'プロジェクトを開く'
+            TabOrder = 4
+            OnClick = BtnOpenProjectClick
+          end
+        end
+        object PanelLaunch: TPanel
+          Left = 0
+          Height = 405
+          Top = 312
+          Width = 992
+          Align = alClient
+          BevelOuter = bvLowered
+          Caption = '起動・操作'
+          ClientHeight = 405
+          ClientWidth = 992
+          Enabled = False
+          TabOrder = 1
+          object Label4: TLabel
+            Left = 20
+            Height = 20
+            Top = 40
+            Width = 82
+            Caption = 'エディタで開く:'
+          end
+          object BtnEditor1: TButton
+            Left = 180
+            Height = 38
+            Top = 35
+            Width = 188
+            Caption = 'エディタ1'
+            TabOrder = 0
+            OnClick = BtnEditor1Click
+          end
+          object BtnEditor2: TButton
+            Left = 380
+            Height = 38
+            Top = 35
+            Width = 188
+            Caption = 'エディタ2'
+            TabOrder = 1
+            OnClick = BtnEditor2Click
+          end
+          object BtnEditor3: TButton
+            Left = 580
+            Height = 38
+            Top = 35
+            Width = 188
+            Caption = 'エディタ3'
+            TabOrder = 2
+            OnClick = BtnEditor3Click
+          end
+          object BtnOpenConsole: TButton
+            Left = 180
+            Height = 38
+            Top = 90
+            Width = 250
+            Caption = 'コンソールをここで開く'
+            TabOrder = 3
+            OnClick = BtnOpenConsoleClick
+          end
+          object BtnOpenLazarus: TButton
+            Left = 180
+            Height = 38
+            Top = 140
+            Width = 250
+            Caption = 'Lazarus IDEで開く (.lpi)'
+            TabOrder = 4
+            OnClick = BtnOpenLazarusClick
+          end
+          object BtnOpenExplorer: TButton
+            Left = 180
+            Height = 38
+            Top = 190
+            Width = 250
+            Caption = 'エクスプローラーで開く'
+            TabOrder = 5
+            OnClick = BtnOpenExplorerClick
+          end
+          object BtnBuild: TButton
+            Left = 180
+            Height = 38
+            Top = 240
+            Width = 250
+            Caption = 'ビルド'
+            TabOrder = 6
+            OnClick = BtnBuildClick
+          end
+          object BtnRunExecutable: TButton
+            Left = 450
+            Height = 38
+            Top = 240
+            Width = 250
+            Caption = '実行ファイルを起動'
+            TabOrder = 7
+            OnClick = BtnRunExecutableClick
+          end
+          object CheckBoxShowConsole: TCheckBox
+            Left = 180
+            Height = 23
+            Top = 290
+            Width = 200
+            Caption = 'プロンプトを表示'
+            Checked = False
+            TabOrder = 8
+          end
+        end
+      end
+    end
+    object TabSheetSettings: TTabSheet
+      Caption = '設定'
+      ClientHeight = 717
+      ClientWidth = 992
+      object Label5: TLabel
+        Left = 20
+        Height = 20
+        Top = 20
+        Width = 82
+        Caption = 'Lazbuildパス:'
+      end
+      object Label6: TLabel
+        Left = 20
+        Height = 20
+        Top = 100
+        Width = 54
+        Caption = 'エディタ1:'
+      end
+      object Label7: TLabel
+        Left = 20
+        Height = 20
+        Top = 140
+        Width = 77
+        Caption = 'エディタ1パス:'
+      end
+      object Label8: TLabel
+        Left = 20
+        Height = 20
+        Top = 180
+        Width = 54
+        Caption = 'エディタ2:'
+      end
+      object Label9: TLabel
+        Left = 20
+        Height = 20
+        Top = 220
+        Width = 77
+        Caption = 'エディタ2パス:'
+      end
+      object Label10: TLabel
+        Left = 20
+        Height = 20
+        Top = 260
+        Width = 54
+        Caption = 'エディタ3:'
+      end
+      object Label11: TLabel
+        Left = 20
+        Height = 20
+        Top = 300
+        Width = 77
+        Caption = 'エディタ3パス:'
+      end
+      object Label12: TLabel
+        Left = 20
+        Height = 20
+        Top = 60
+        Width = 140
+        Caption = '既定のプロジェクトルート:'
+      end
+      object FileNameEditLazbuild: TFileNameEdit
+        Left = 180
+        Height = 28
+        Top = 15
+        Width = 625
+        DialogTitle = 'Lazbuild.exeを選択'
+        Filter = '実行ファイル (*.exe)|*.exe|すべてのファイル (*.*)|*.*'
+        FilterIndex = 0
+        HideDirectories = False
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 0
+      end
+      object DirectoryEditDefaultProjectRoot: TDirectoryEdit
+        Left = 240
+        Height = 28
+        Top = 55
+        Width = 625
+        DialogTitle = '既定のプロジェクトルートフォルダを選択'
+        ShowHidden = False
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object EditEditor1Name: TEdit
+        Left = 180
+        Height = 28
+        Top = 95
+        Width = 250
+        TabOrder = 2
+        Text = 'VSCode'
+      end
+      object FileNameEditEditor1: TFileNameEdit
+        Left = 180
+        Height = 28
+        Top = 135
+        Width = 625
+        DialogTitle = 'エディタ1の実行ファイルを選択'
+        Filter = '実行ファイル (*.exe)|*.exe|すべてのファイル (*.*)|*.*'
+        FilterIndex = 0
+        HideDirectories = False
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 3
+      end
+      object EditEditor2Name: TEdit
+        Left = 180
+        Height = 28
+        Top = 175
+        Width = 250
+        TabOrder = 4
+        Text = 'Cursor'
+      end
+      object FileNameEditEditor2: TFileNameEdit
+        Left = 180
+        Height = 28
+        Top = 215
+        Width = 625
+        DialogTitle = 'エディタ2の実行ファイルを選択'
+        Filter = '実行ファイル (*.exe)|*.exe|すべてのファイル (*.*)|*.*'
+        FilterIndex = 0
+        HideDirectories = False
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 5
+      end
+      object EditEditor3Name: TEdit
+        Left = 180
+        Height = 28
+        Top = 255
+        Width = 250
+        TabOrder = 6
+        Text = 'Antigravity'
+      end
+      object FileNameEditEditor3: TFileNameEdit
+        Left = 180
+        Height = 28
+        Top = 295
+        Width = 625
+        DialogTitle = 'エディタ3の実行ファイルを選択'
+        Filter = '実行ファイル (*.exe)|*.exe|すべてのファイル (*.*)|*.*'
+        FilterIndex = 0
+        HideDirectories = False
+        ButtonWidth = 29
+        NumGlyphs = 1
+        MaxLength = 0
+        TabOrder = 7
+      end
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 24
+    Top = 726
+    Width = 1000
+    SimplePanel = True
+    SimpleText = '準備完了'
+  end
+end
