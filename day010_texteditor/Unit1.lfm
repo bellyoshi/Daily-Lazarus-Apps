@@ -1,0 +1,76 @@
+object Form1: TForm1
+  Left = 316
+  Height = 455
+  Top = 162
+  Width = 640
+  Caption = 'シンプルテキストエディター'
+  ClientHeight = 455
+  ClientWidth = 640
+  DesignTimePPI = 120
+  Menu = MainMenu1
+  LCLVersion = '4.4.0.0'
+  OnClose = FormClose
+  object Memo1: TMemo
+    Left = 0
+    Height = 455
+    Top = 0
+    Width = 640
+    Align = alClient
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -17
+    Font.Name = 'Consolas'
+    Font.Pitch = fpFixed
+    Lines.Strings = (
+      'Memo1'
+    )
+    ParentFont = False
+    ScrollBars = ssBoth
+    TabOrder = 0
+    WordWrap = False
+    OnChange = Memo1Change
+  end
+  object MainMenu1: TMainMenu
+    Left = 24
+    Top = 16
+    object MenuFile: TMenuItem
+      Caption = 'ファイル(&F)'
+      object MenuNew: TMenuItem
+        Caption = '新規(&N)'
+        ShortCut = 16462
+        OnClick = MenuNewClick
+      end
+      object MenuOpen: TMenuItem
+        Caption = '開く(&O)...'
+        ShortCut = 16463
+        OnClick = MenuOpenClick
+      end
+      object MenuSave: TMenuItem
+        Caption = '保存(&S)'
+        ShortCut = 16467
+        OnClick = MenuSaveClick
+      end
+      object MenuSaveAs: TMenuItem
+        Caption = '名前を付けて保存(&A)...'
+        OnClick = MenuSaveAsClick
+      end
+      object Separator1: TMenuItem
+        Caption = '-'
+      end
+      object MenuExit: TMenuItem
+        Caption = '終了(&X)'
+        OnClick = MenuExitClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'テキストファイル (*.txt)|*.txt|すべてのファイル (*.*)|*.*'
+    Left = 80
+    Top = 16
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'テキストファイル (*.txt)|*.txt|すべてのファイル (*.*)|*.*'
+    Left = 136
+    Top = 16
+  end
+end
