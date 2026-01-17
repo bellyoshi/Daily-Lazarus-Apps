@@ -1,0 +1,62 @@
+object Form1: TForm1
+  Left = 316
+  Height = 480
+  Top = 162
+  Width = 640
+  Caption = '暗号化テキストエディタ'
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  object Memo1: TMemo
+    Left = 8
+    Height = 400
+    Top = 8
+    Width = 624
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    ScrollBars = ssBoth
+    TabOrder = 0
+  end
+  object ButtonSave: TButton
+    Left = 8
+    Height = 30
+    Top = 416
+    Width = 120
+    Anchors = [akLeft, akBottom]
+    Caption = '保存'
+    TabOrder = 1
+    OnClick = ButtonSaveClick
+  end
+  object ButtonOpen: TButton
+    Left = 136
+    Height = 30
+    Top = 416
+    Width = 120
+    Anchors = [akLeft, akBottom]
+    Caption = '開く'
+    TabOrder = 2
+    OnClick = ButtonOpenClick
+  end
+  object ButtonClear: TButton
+    Left = 264
+    Height = 30
+    Top = 416
+    Width = 120
+    Anchors = [akLeft, akBottom]
+    Caption = 'クリア'
+    TabOrder = 3
+    OnClick = ButtonClearClick
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = '.crypt'
+    Filter = '暗号化ファイル (*.crypt)|*.crypt|すべてのファイル (*.*)|*.*'
+    Title = '暗号化ファイルを保存'
+    Left = 400
+    Top = 416
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '暗号化ファイル (*.crypt)|*.crypt|すべてのファイル (*.*)|*.*'
+    Title = '暗号化ファイルを開く'
+    Left = 512
+    Top = 416
+  end
+end
