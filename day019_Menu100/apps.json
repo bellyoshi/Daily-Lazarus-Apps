@@ -1,0 +1,150 @@
+{
+  "baseDir" : "C:\\Users\\bellm\\source\\repos\\bellyoshi\\Daily-Lazarus-Apps",
+  "LazManager" : "C:\\Users\\bellm\\source\\repos\\bellyoshi\\Lazarus-learning\\LazManager\\LazManager.exe",
+  "apps" : {
+    "day001_MMKaeru" : {
+      "title" : "MIDI Kaeru",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day001-midi-kaeru/",
+      "enabled" : true,
+      "notes" : [
+        "機能追加：どれみふぁみれどをいれるとそのメロディを生成。"
+      ]
+    },
+    "day002_MMPlayer" : {
+      "title" : "MIDI Player",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day002-midi-player/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day003_LazManager" : {
+      "title" : "LazManager",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day003-lazmanager/",
+      "enabled" : true,
+      "notes" : [
+        "機能追加：コマンドライン引数を取り、そのフォルダを開く。",
+        "機能追加：Zipファイルを作成"
+      ]
+    },
+    "day004_Reversi" : {
+      "title" : "Reversi",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day004-reversi/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day005_Chess" : {
+      "title" : "Chess",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day005-chess/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day006_worldclock" : {
+      "title" : "World Clock",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day006-worldclock/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day007_Minesweeper" : {
+      "title" : "Minesweeper",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day007-minesweeper/",
+      "enabled" : true,
+      "notes" : [
+        "機能追加：レベル選択。中、高難易度"
+      ]
+    },
+    "day008_MoonCalendar" : {
+      "title" : "Moon Calendar",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day008-moon-calendar/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day009_CreateZip" : {
+      "title" : "Create Zip",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day009-create-zip/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day010_texteditor" : {
+      "title" : "Simple Text Editor",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day010-simple-editor/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day011_Calc" : {
+      "title" : "Calculator",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day011-calc/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day012_BmpViewer" : {
+      "title" : "BMP Viewer",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day012-bmp-viewer/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day013_3moku" : {
+      "title" : "3目並べ",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day013-3moku/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day014_3moku" : {
+      "title" : "3目並べ（完成版）",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day014-3moku-complete/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day015_Sudoku" : {
+      "title" : "Sudoku",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day015-sudoku/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day016_Sokoban" : {
+      "title" : "Sokoban",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day016-sokoban/",
+      "enabled" : true,
+      "notes" : [
+        "機能追加：テキストファイルからゲームを読み込む。",
+        "機能変更：GUIで表示"
+      ]
+    },
+    "day017_CryptEditor" : {
+      "title" : "Crypt Editor",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day017-crypt-editor/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day018_2048" : {
+      "title" : "2048",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day018-2048/",
+      "enabled" : true,
+      "notes" : [
+      ]
+    },
+    "day019_Menu100" : {
+      "title" : "Menu100",
+      "blogUrl" : "https://yoshiby2nd.netlify.app/posts/lazarus-day019-menu100/",
+      "enabled" : true,
+      "notes" : [
+        "機能追加：フォルダを捜査して自動でID追加。",
+        "機能追加：タイトル修正機能",
+        "機能変更：IDの修正不可（フォルダ名と一致）",
+        "機能変更：保存ボタンなし。自動保存",
+        "確認：管理ボタンで開けるようになる。LazManager側の修正"
+      ]
+    }
+  }
+}

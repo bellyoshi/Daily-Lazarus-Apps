@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 316
+  Height = 600
+  Top = 162
+  Width = 500
+  Caption = 'Menu100 - Daily Lazarus Apps'
+  ClientHeight = 600
+  ClientWidth = 500
+  DesignTimePPI = 120
+  LCLVersion = '4.4.0.0'
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  object ListViewApps: TListView
+    Left = 8
+    Height = 300
+    Top = 8
+    Width = 484
+    Columns = <>
+    TabOrder = 0
+    OnSelectItem = ListViewAppsSelectItem
+  end
+  object ButtonRun: TButton
+    Left = 8
+    Height = 30
+    Top = 320
+    Width = 100
+    Caption = '実行'
+    TabOrder = 1
+    OnClick = ButtonRunClick
+  end
+  object ButtonBlog: TButton
+    Left = 116
+    Height = 30
+    Top = 320
+    Width = 100
+    Caption = 'ブログ'
+    Enabled = False
+    TabOrder = 2
+    OnClick = ButtonBlogClick
+  end
+  object ButtonManager: TButton
+    Left = 224
+    Height = 30
+    Top = 320
+    Width = 100
+    Caption = '管理'
+    TabOrder = 3
+    OnClick = ButtonManagerClick
+  end
+  object ButtonSave: TButton
+    Left = 332
+    Height = 30
+    Top = 320
+    Width = 100
+    Caption = '保存'
+    Enabled = False
+    TabOrder = 4
+    OnClick = ButtonSaveClick
+  end
+  object MemoNotes: TMemo
+    Left = 8
+    Height = 220
+    Top = 360
+    Width = 484
+    Lines.Strings = (
+      'MemoNotes'
+    )
+    ScrollBars = ssVertical
+    TabOrder = 5
+    OnChange = MemoNotesChange
+  end
+end
