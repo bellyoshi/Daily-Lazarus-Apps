@@ -1,0 +1,58 @@
+Hint: (lazbuild) Primary config path: "C:\Users\bellm\AppData\Local\lazarus"
+InitializeFppkg failed: Could not find a fpc executable in the PATH
+Hint: (lazarus) [TBuildManager.SetBuildTarget] Old=x86_64-win64--win32 New=x86_64-win64--win32 Changed: OS/CPU=True LCL=False
+Hint: (lazarus) [TBuildManager.SetBuildTarget] Old=x86_64-win64--win32 New=x86_64-win64--win32 Changed: OS/CPU=True LCL=False
+Hint: (lazarus) Project needs building: Compile was incomplete for Project
+Info: (lazarus) Execute Title="プロジェクトをコンパイル対象：C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\day022_speread.exe"
+Info: (lazarus) Working Directory="C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\"
+Info: (lazarus) Executable="C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.exe"
+Info: (lazarus) Param[0]="-MObjFPC"
+Info: (lazarus) Param[1]="-Scghi"
+Info: (lazarus) Param[2]="-O1"
+Info: (lazarus) Param[3]="-g"
+Info: (lazarus) Param[4]="-gl"
+Info: (lazarus) Param[5]="-WG"
+Info: (lazarus) Param[6]="-l"
+Info: (lazarus) Param[7]="-vewnhibq"
+Info: (lazarus) Param[8]="-FiC:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\lib\x86_64-win64"
+Info: (lazarus) Param[9]="-FuC:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\"
+Info: (lazarus) Param[10]="-FuC:\Users\bellm\AppData\Local\lazarus\onlinepackagemanager\packages\FPSpreadsheet\source\visual\lib\x86_64-win64"
+Info: (lazarus) Param[11]="-FuC:\lazarus\components\tachart\lib\x86_64-win64\win32"
+Info: (lazarus) Param[12]="-FuC:\lazarus\components\ideintf\units\x86_64-win64\win32"
+Info: (lazarus) Param[13]="-FuC:\lazarus\components\lazcontrols\lib\x86_64-win64\win32"
+Info: (lazarus) Param[14]="-FuC:\lazarus\lcl\units\x86_64-win64\win32"
+Info: (lazarus) Param[15]="-FuC:\lazarus\lcl\units\x86_64-win64"
+Info: (lazarus) Param[16]="-FuC:\Users\bellm\AppData\Local\lazarus\onlinepackagemanager\packages\FPSpreadsheet\source\common\lib\x86_64-win64"
+Info: (lazarus) Param[17]="-FuC:\lazarus\components\freetype\lib\x86_64-win64"
+Info: (lazarus) Param[18]="-FuC:\lazarus\components\debuggerintf\lib\x86_64-win64"
+Info: (lazarus) Param[19]="-FuC:\lazarus\components\buildintf\units\x86_64-win64"
+Info: (lazarus) Param[20]="-FuC:\lazarus\components\lazutils\lib\x86_64-win64"
+Info: (lazarus) Param[21]="-FuC:\lazarus\components\lazdebuggers\lazdebuggerintf\lib\x86_64-win64"
+Info: (lazarus) Param[22]="-FuC:\lazarus\packager\units\x86_64-win64"
+Info: (lazarus) Param[23]="-FUC:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\lib\x86_64-win64\"
+Info: (lazarus) Param[24]="-FEC:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\"
+Info: (lazarus) Param[25]="-oC:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\day022_speread.exe"
+Info: (lazarus) Param[26]="-dLCL"
+Info: (lazarus) Param[27]="-dLCLwin32"
+Info: (lazarus) Param[28]="day022_speread.lpr"
+Hint: (11030) Start of reading config file C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.cfg
+Hint: (11031) End of reading config file C:\lazarus\fpc\3.2.2\bin\x86_64-win64\fpc.cfg
+Free Pascal Compiler version 3.2.2 [2025/11/08] for x86_64
+Copyright (c) 1993-2021 by Florian Klaempfl and others
+(1002) Target OS: Win64 for x64
+(3104) Compiling day022_speread.lpr
+(3104) Compiling Unit1.pas
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(69,42) Warning: (4104) Implicit string type conversion from "AnsiString" to "UnicodeString"
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(72,19) Warning: (5093) function result variable of a managed type does not seem to be initialized
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(115,42) Warning: (4104) Implicit string type conversion from "AnsiString" to "UnicodeString"
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(117,26) Hint: (5091) Local variable "DecryptedData" of a managed type does not seem to be initialized
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(16,28) Hint: (5024) Parameter "Sender" not used
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(173,28) Hint: (5091) Local variable "EncryptedData" of a managed type does not seem to be initialized
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(17,28) Hint: (5024) Parameter "Sender" not used
+C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\Unit1.pas(9,37) Hint: (5023) Unit "fpsallformats" not used in Unit1
+(9022) Compiling resource C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\lib\x86_64-win64\day022_speread.obj
+(9015) Linking C:\Users\bellm\source\repos\bellyoshi\Daily-Lazarus-Apps\day022_speread\day022_speread.exe
+(1008) 215 lines compiled, 1.2 sec, 3237632 bytes code, 459988 bytes data
+(1021) 3 warning(s) issued
+(1022) 7 hint(s) issued
+Info: (lazarus) [TCompiler.Compile] end
