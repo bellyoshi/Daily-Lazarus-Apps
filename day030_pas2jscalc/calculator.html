@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8"/>
+    <title>Pas2JS Calculator</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; }
+        #result { margin-top: 10px; font-weight: bold; color: blue; }
+        input { width: 300px; padding: 5px; }
+        button { padding: 5px 15px; }
+    </style>
+</head>
+<body>
+    <h2>Pas2JS 計算機</h2>
+    <input type="text" id="formula" placeholder="例: (10 + 5) * 2">
+    <button id="btnCalc">計算</button>
+    <div id="result"></div>
+
+    <script src="calculator.js"></script>
+    <script>
+        window.addEventListener('load', function() {
+            rtl.run();
+        });
+    </script>
+</body>
+</html>
