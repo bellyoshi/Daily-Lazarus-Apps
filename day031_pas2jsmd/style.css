@@ -1,0 +1,49 @@
+/* 基本レイアウト */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* 共通設定：左右50%分割 */
+#editor, #preview {
+    flex: 1;
+    height: 100%;
+    padding: 25px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+/* 左側：エディタ */
+#editor {
+    border: none;
+    border-right: 1px solid #ddd;
+    background-color: #f9f9f9;
+    resize: none;
+    outline: none;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* 右側：プレビュー */
+#preview {
+    background-color: #ffffff;
+    line-height: 1.7;
+    color: #222;
+}
+
+/* プレビュー内の簡易装飾 */
+#preview h1 { border-bottom: 2px solid #eee; padding-bottom: 0.3em; }
+#preview h2 { border-bottom: 1px solid #eee; padding-bottom: 0.3em; }
+#preview strong { color: #d32f2f; } /* 強調を少し目立たせる */
+#preview code { background: #eee; padding: 2px 4px; border-radius: 4px; }
