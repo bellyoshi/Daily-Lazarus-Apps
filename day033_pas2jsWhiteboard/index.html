@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>pas2js Whiteboard</title>
+    <style>
+        canvas { border: 1px solid #ccc; cursor: crosshair; background: #f9f9f9; }
+        body { display: flex; flex-direction: column; align-items: center; font-family: sans-serif; }
+        .palette { display: flex; gap: 8px; margin-bottom: 12px; align-items: center; flex-wrap: wrap; }
+        .palette button { padding: 8px 14px; cursor: pointer; border: 2px solid #333; border-radius: 6px; background: #fff; font-size: 14px; }
+        .palette button:hover { background: #e8e8e8; }
+        .palette button.active { background: #4a9eff; color: #fff; border-color: #2d7ad4; }
+        .color-palette { display: flex; gap: 4px; margin-bottom: 12px; align-items: center; flex-wrap: wrap; }
+        .color-swatch { width: 28px; height: 28px; border: 2px solid #333; border-radius: 4px; cursor: pointer; padding: 0; }
+        .color-swatch:hover { transform: scale(1.1); box-shadow: 0 1px 4px rgba(0,0,0,0.3); }
+        .color-swatch.active { border-color: #fff; box-shadow: 0 0 0 2px #333; }
+        #colorPreview { width: 32px; height: 28px; border: 2px solid #333; border-radius: 4px; margin-left: 8px; }
+    </style>
+</head>
+<body>
+    <h1>pas2js オートシェイプ</h1>
+    <div class="palette">
+        <span>ツール:</span>
+        <button type="button" id="btnSelect" class="active">選択</button>
+        <button type="button" id="btnRect">四角</button>
+        <button type="button" id="btnCircle">丸</button>
+        <button type="button" id="btnLine">線</button>
+    </div>
+    <div class="color-palette" id="colorPalette">
+        <span>色:</span>
+        <button type="button" class="color-swatch active" data-color="skyblue" style="background-color: skyblue" title="空色"></button>
+        <button type="button" class="color-swatch" data-color="tomato" style="background-color: tomato" title="トマト"></button>
+        <button type="button" class="color-swatch" data-color="gold" style="background-color: gold" title="金"></button>
+        <button type="button" class="color-swatch" data-color="limegreen" style="background-color: limegreen" title="黄緑"></button>
+        <button type="button" class="color-swatch" data-color="plum" style="background-color: plum" title="プラム"></button>
+        <button type="button" class="color-swatch" data-color="coral" style="background-color: coral" title="コーラル"></button>
+        <button type="button" class="color-swatch" data-color="lightgray" style="background-color: lightgray" title="薄灰"></button>
+        <button type="button" class="color-swatch" data-color="orange" style="background-color: orange" title="オレンジ"></button>
+        <button type="button" class="color-swatch" data-color="mediumseagreen" style="background-color: mediumseagreen" title="海緑"></button>
+        <button type="button" class="color-swatch" data-color="mediumpurple" style="background-color: mediumpurple" title="紫"></button>
+        <div id="colorPreview"></div>
+    </div>
+    <canvas id="paintCanvas" width="800" height="600"></canvas>
+    <p>ツールを選んでキャンバスにドラッグで図形を追加。選択ツールで図形をドラッグして移動。</p>
+    <script src="whiteboard.js"></script>
+    <script>
+        // HTMLの解析が終わってからPascalプログラム(rtl.run)を開始
+        window.addEventListener('DOMContentLoaded', function() {
+            if (typeof rtl !== 'undefined') {
+                rtl.run();
+            } else {
+                console.error('Error: pas2js runtime (rtl.js) not found.');
+            }
+        });
+    </script>
+</body>
+</html>
