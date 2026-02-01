@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type-Safe Pascal Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <h2>ユーザー登録</h2>
+        <p class="subtitle">Pascal Type-Safe Validation</p>
+        <hr>
+
+        <form id="userForm" novalidate>
+            <div class="form-group">
+                <label for="userName">ユーザー名</label>
+                <input type="text" id="userName" name="userName" placeholder="3文字以上で入力" required>
+            </div>
+
+            <div class="form-group">
+                <label for="age">年齢</label>
+                <input type="number" id="age" name="age" value="18" min="0" max="150">
+                <small>※18歳〜120歳が対象です</small>
+            </div>
+
+            <div class="form-group">
+                <label>興味のある分野 <span class="required-tag">必須</span></label>
+                <div class="checkbox-group">
+                    <label class="chip">
+                        <input type="checkbox" name="interest" value="itTech"> テクノロジー
+                    </label>
+                    <label class="chip">
+                        <input type="checkbox" name="interest" value="itArt"> アート
+                    </label>
+                    <label class="chip">
+                        <input type="checkbox" name="interest" value="itSports"> スポーツ
+                    </label>
+                    <label class="chip">
+                        <input type="checkbox" name="interest" value="itMusic"> 音楽
+                    </label>
+                </div>
+            </div>
+
+            <div id="errorMessage" class="error-msg" aria-live="polite"></div>
+
+            <button type="button" id="submitBtn">
+                データを検証して登録
+            </button>
+        </form>
+    </div>
+    <script src="UserForm1.js"></script> 
+    <script>
+        // HTMLの解析が終わってからPascalプログラム(rtl.run)を開始
+        window.addEventListener('DOMContentLoaded', function() {
+            if (typeof rtl !== 'undefined') {
+                rtl.run();
+            } else {
+                console.error('Error: pas2js runtime (rtl.js) not found.');
+            }
+        });
+    </script>
+</body>
+</html>
