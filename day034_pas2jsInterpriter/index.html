@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<textarea id="source" rows="20" cols="55">
+A = 100
+SUM = 0
+WHILE A
+  SUM = SUM + A
+  A = A - 1
+WEND
+PRINT SUM
+IF A THEN PRINT 1 ELSE PRINT 0
+</textarea>
+  <br>
+  <button id="runBtn">Run</button>
+  <pre id="console" style="background: #eee; padding: 10px;"></pre>
+  <script src="SimpleInterpreter.js"></script>
+  <script>
+    rtl.run();
+  </script>
+</body>
+</html>
