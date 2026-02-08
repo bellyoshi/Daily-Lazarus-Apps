@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pas2js L-System Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>L-System Fractal Explorer</h1>
+    </header>
+
+    <main>
+        <div class="controls">
+            <div class="control-group">
+                <label for="presetSelect">アルゴリズム</label>
+                <select id="presetSelect">
+                    <option value="tree">有機的な木</option>
+                    <option value="fern">シダの葉</option>
+                    <option value="snowflake">コッホ雪の結晶</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="depthRange">再帰の深さ: <span id="depthVal">3</span></label>
+                <input type="range" id="depthRange" min="0" max="6" value="3">
+            </div>
+
+            <div class="status-box">
+                <p id="status">準備完了</p>
+            </div>
+        </div>
+
+        <div class="canvas-container">
+            <canvas id="mainCanvas" width="800" height="600"></canvas>
+        </div>
+    </main>
+
+    <script src="project1.js"></script>
+    <script>
+        rtl.run();
+    </script>
+</body>
+</html>
