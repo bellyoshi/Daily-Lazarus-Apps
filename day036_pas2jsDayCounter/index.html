@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Counter - pas2js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>経過日数カウンター</h2>
+        
+        <div class="input-group">
+            <label for="start-date">開始日を選択</label>
+            <input type="date" id="start-date">
+        </div>
+
+        <div class="result-card">
+            <p class="label">今日は開始日から</p>
+            <div id="result-container">
+                <span id="day-count">0</span>
+                <span class="unit">日目</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="project1.js"></script>
+    <script>
+        rtl.run();
+    </script>
+</body>
+</html>

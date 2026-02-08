@@ -1,0 +1,81 @@
+/* 基本のレイアウト */
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+h2 {
+    margin-bottom: 1.5rem;
+    color: #444;
+}
+
+/* 入力エリア */
+.input-group {
+    margin-bottom: 2rem;
+}
+
+.input-group label {
+    display: block;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+input[type="date"] {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input[type="date"]:focus {
+    border-color: #007bff;
+}
+
+/* 結果表示エリア */
+.result-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.label {
+    margin: 0;
+    font-size: 1rem;
+    color: #888;
+}
+
+#result-container {
+    margin-top: 10px;
+}
+
+#day-count {
+    font-size: 5rem; /* 大きく表示 */
+    font-weight: 800;
+    color: #007bff;
+    line-height: 1;
+}
+
+.unit {
+    font-size: 1.5rem;
+    color: #555;
+    margin-left: 5px;
+}
