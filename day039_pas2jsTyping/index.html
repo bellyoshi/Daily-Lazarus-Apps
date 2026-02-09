@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pascal Typing Tutor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <header>
+            <h1>Pascal Keyword Typer</h1>
+            <div class="stats">
+                Score: <span id="score-value">0</span>
+            </div>
+        </header>
+
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+
+        <div id="input-area">
+            <div class="input-label">CURRENT INPUT</div>
+            <div id="current-word">_</div>
+        </div>
+
+        <div class="instructions">
+            <p>流れてくるPascal予約語をタイプして [Enter] で送信！</p>
+            <p class="hint">Hint: begin...end, procedure, var, record...</p>
+        </div>
+    </div>
+
+    <script src="typing_game.js"></script>
+    <script>
+        rtl.run();
+    </script>
+</body>
+</html>

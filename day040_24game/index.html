@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Pascal 24Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>24Game</h1>
+        <p id="msg">数字を1つ選んでください</p>
+        
+        <div id="number-container">
+            </div>
+
+        <div id="operator-container">
+            <button class="op-btn" onclick="game.HandleOpClick('+')">＋</button>
+            <button class="op-btn" onclick="game.HandleOpClick('-')">－</button>
+            <button class="op-btn" onclick="game.HandleOpClick('*')">×</button>
+            <button class="op-btn" onclick="game.HandleOpClick('/')">÷</button>
+        </div>
+
+        <div id="control-container">
+            <button id="reset-btn" onclick="game.NewGame()">新しい問題</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+    <script>
+        rtl.run();
+    </script>
+</body>
+</html>

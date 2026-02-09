@@ -1,0 +1,10 @@
+body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; background: #f0f2f5; margin: 0; }
+#game-container { background: white; padding: 2rem; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; width: 320px; }
+button { margin: 5px; padding: 15px; font-size: 1.2rem; cursor: pointer; border: none; border-radius: 8px; transition: 0.2s; }
+.num-btn { background: #007bff; color: white; width: 60px; }
+.num-btn:disabled { background: #ccc; }
+.num-btn.selected { background: #ffc107; color: black; }
+.op-btn { background: #6c757d; color: white; width: 50px; }
+.op-btn:active { transform: scale(0.95); }
+#reset-btn { background: #28a745; color: white; width: 100%; margin-top: 20px; }
+#msg { color: #555; height: 1.2rem; }

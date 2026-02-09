@@ -1,0 +1,82 @@
+/* ベーススタイル */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* 深い紺色 */
+    color: #e9ecef;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#game-container {
+    text-align: center;
+    width: 820px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #4dabf7; /* Pascalらしいクリーンな青 */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.stats {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* キャンバスのデザイン */
+#gameCanvas {
+    background-color: #16213e;
+    border: 3px solid #4dabf7;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    display: block;
+}
+
+/* 入力確認エリア */
+#input-area {
+    margin-top: 20px;
+    padding: 15px;
+    background: #0f3460;
+    border-radius: 5px;
+}
+
+.input-label {
+    font-size: 0.8rem;
+    color: #94a3b8;
+    margin-bottom: 5px;
+}
+
+#current-word {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #fff;
+    min-height: 2.5rem;
+    letter-spacing: 3px;
+}
+
+/* 説明文 */
+.instructions {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #94a3b8;
+}
+
+.hint {
+    font-style: italic;
+    color: #4dabf7;
+}
