@@ -1,0 +1,67 @@
+body { background-color: #333; color: black; font-family: sans-serif; font-size: 1.25rem; display: flex; flex-direction: column; align-items: center; }
+.game-container { display: flex; gap: 20px; margin-top: 50px; background: #8b4513; padding: 20px; border-radius: 8px; }
+
+.shogi-board {
+    display: grid;
+    grid-template-columns: repeat(9, 60px);
+    grid-template-rows: repeat(9, 65px);
+    background-color: #f3c998;
+    border: 2px solid #5d3a1a;
+}
+
+.cell {
+    border: 1px solid #5d3a1a;
+    position: relative;
+    cursor: pointer;
+}
+
+.cell.selected { background-color: rgba(255, 255, 0, 0.4); }
+
+.cell.move-dest { background-color: rgba(100, 200, 100, 0.5); cursor: pointer; }
+.cell.move-dest:hover { background-color: rgba(120, 220, 120, 0.65); }
+
+.piece-container {
+    position: relative;
+    width: 100%; height: 100%;
+    display: flex; justify-content: center; align-items: center;
+}
+
+.quantum-char {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 34px;
+    color: black;
+    font-family: "serif";
+    pointer-events: none;
+    transition: opacity 0.3s;
+    transform: translate(-50%, -50%);
+}
+
+.piece-stand {
+    width: 120px; height: 585px;
+    background-color: #d2b48c;
+    border: 2px solid #5d3a1a;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    gap: 4px;
+    padding: 6px;
+    overflow-y: auto;
+}
+
+.piece-stand .cell {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
+    min-height: 52px;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#status { margin-top: 20px; font-size: 28px; color: black; background: #eee; padding: 8px 16px; border-radius: 4px; }
+
+#test-btn { margin-top: 12px; padding: 8px 16px; font-size: 1rem; cursor: pointer; }
